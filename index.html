@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G.Auto for cars </title>
+    <meta name="description" content="Discover modern, semi-luxury cars at G.Auto.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <!-- Navbar (Fixed) -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <i class="fa-solid fa-car-side"></i> --> G.Auto
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="login.html" class="login-btn"> Login</a>
+        </div>
+    </nav>
+
+    <div class="layout-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="filters">
+                <h3>Filters</h3>
+                
+                <div class="filter-group">
+                    <label>Year Range</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> 2023 - 2024</label>
+                        <label><input type="checkbox"> 2020 - 2022</label>
+                        <label><input type="checkbox"> Pre-2020</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Price Range</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> &lt; 500k</label>
+                        <label><input type="checkbox"> 500k - 1M</label>
+                        <label><input type="checkbox"> &gt; 1M</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme-toggle">
+                <button id="themeToggleBtn">
+                    <i class="fa-solid fa-sun"></i> <span>Light Mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Bar Section -->
+            <section class="search-section reveal">
+                <div class="search-container">
+                    <input type="text" placeholder="Search for cars...">
+                    <!-- <i class="fa-solid fa-search search-icon"></i> -->
+                </div>
+                <div class="search-results">
+                    <!-- Cards will appear here later -->
+                </div>
+            </section>
+
+            <!-- Hero Section -->
+            <section id="home" class="hero-section reveal">
+                <div class="hero-left">
+                    <span class="small-text">Welcome to</span>
+                    <h1>G.Auto</h1>
+                    <p class="subtitle">For luxury cars and lifestyle</p>
+                    <button class="btn-primary">Browse Cars</button>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-image-container"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
